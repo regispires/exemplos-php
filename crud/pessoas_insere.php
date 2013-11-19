@@ -8,6 +8,7 @@
 <h1>Insere Pessoa</h1>
 <form action="pessoas_insere_banco.php" method="POST">
 <?php require_once('pessoas_form.php'); ?>
+<input type="submit" value="Inserir" />
 </form>
 </body>
 </html>

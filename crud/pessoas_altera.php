@@ -14,6 +14,7 @@
 <h1>Altera Pessoa</h1>
 <form action="pessoas_altera_banco.php" method="POST">
 <?php require_once('pessoas_form.php'); ?>
+<input type="submit" value="Alterar" />
 </form>
 </body>
 </html>

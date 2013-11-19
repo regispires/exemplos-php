@@ -5,4 +5,3 @@
 <input id="fone" type="text" name="fone" value="<?= isset($resultado) ? $resultado['fone'] : '' ?>" /><br/>
 <label for="email">E-Mail:</label>
 <input id="email" type="text" name="email" value="<?= isset($resultado) ? $resultado['email'] : '' ?>" /><br/>
-<input type="submit" value="Alterar" />
