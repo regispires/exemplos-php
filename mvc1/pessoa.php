@@ -41,9 +41,8 @@ class Pessoa {
 		require_once('db_conecta.php');
 		$stmt = $con->prepare("SELECT * FROM pessoas ");
 		$stmt->execute();
-		$resultados = $stmt->fetchAll();
 		$pessoas = array();
-		foreach ($resultados as $item) {
+		while ($item = $stmt->fetch()) {
 			$pessoa = new Pessoa();
 			$pessoa->setId($item['id']);
 			$pessoa->setNome($item['nome']);

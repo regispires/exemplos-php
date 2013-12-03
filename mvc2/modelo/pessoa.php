@@ -39,16 +39,15 @@ class Pessoa {
 
     function busca() {
         require_once ('modelo/db_conecta.php');
-        $stmt = $con -> prepare("SELECT * FROM pessoas ");
-        $stmt -> execute();
-        $resultados = $stmt -> fetchAll();
+        $stmt = $con->prepare("SELECT * FROM pessoas ");
+        $stmt->execute();
         $pessoas = array();
-        foreach ($resultados as $item) {
+        while ($item = $stmt->fetch()) {
             $pessoa = new Pessoa();
-            $pessoa -> setId($item['id']);
-            $pessoa -> setNome($item['nome']);
-            $pessoa -> setFone($item['fone']);
-            $pessoa -> setEmail($item['email']);
+            $pessoa->setId($item['id']);
+            $pessoa->setNome($item['nome']);
+            $pessoa->setFone($item['fone']);
+            $pessoa->setEmail($item['email']);
             array_push($pessoas, $pessoa);
         }
         return $pessoas;

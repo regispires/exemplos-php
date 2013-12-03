@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Listagem de Pessoas</h1>
-    <table>
+    <table cellspacing="0" border="1">
     <thead>
         <tr>
         <th>Nome</th>
@@ -20,12 +20,12 @@
     <?php foreach ($pessoas as $pessoa) { ?>
     <tbody>
     <tr>
-        <td><?= $pessoa -> getNome() ?></td>
-        <td><?= $pessoa -> getFone() ?></td>
-        <td><?= $pessoa -> getEmail() ?></td>
+        <td><?= $pessoa->getNome() ?></td>
+        <td><?= $pessoa->getFone() ?></td>
+        <td><?= $pessoa->getEmail() ?></td>
         <td>
-        <a href="index.php?controlador=pessoa&acao=altera&id=<?= $pessoa -> getId() ?>">Alterar</a> |
-        <a href="index.php?controlador=pessoa&acao=deleta&id=<?= $pessoa -> getId() ?>" onclick="return confirm('Confirma exclusão?')">Remover</a>
+        <a href="index.php?controlador=pessoa&acao=altera&id=<?= $pessoa->getId() ?>">Alterar</a> |
+        <a href="index.php?controlador=pessoa&acao=deleta&id=<?= $pessoa->getId() ?>" onclick="return confirm('Confirma exclusão?')">Remover</a>
         </td>
     </tr>
     </tbody>
