@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="UTF-8"/>
 	<title>Listagem de Pessoas</title>
 </head>
 <body>
