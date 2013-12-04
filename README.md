@@ -3,6 +3,20 @@ Exemplos PHP
 Neste projetos estão alguns exemplos de pequenas aplicações PHP que usamos em sala de aula.  
 A seguir eles são listados em ordem de complexidade (do mais simples ao mais complexo).
 
+Algumas aplições requerem o database 'prog_web' criado no MySQL.
+Esse database pode ser gerado a partir do seguinte script:
+
+```sql
+CREATE DATABASE prog_web DEFAULT CHARSET utf8;
+
+CREATE TABLE pessoas (
+  id int PRIMARY KEY,
+  nome varchar(50),
+  fone varchar(10),
+  email varchar(100),
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
 soma
 -----
 Recebe dois números e exibe sua soma.
