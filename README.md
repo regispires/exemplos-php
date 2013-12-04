@@ -1,7 +1,7 @@
 Exemplos PHP
 ============
 Neste projetos estão alguns exemplos de pequenas aplicações PHP que usamos em sala de aula.  
-A seguir eles são listados em ordem de complexidade (do mais simples ao mais complexo).
+A seguir elas são listadas em ordem de complexidade (da mais simples à mais complexa).
 
 Algumas aplicações requerem o database 'prog_web' criado no MySQL.
 Esse database pode ser gerado a partir do seguinte script:
