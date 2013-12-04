@@ -9,12 +9,19 @@ Esse database pode ser gerado a partir do seguinte script:
 ```sql
 CREATE DATABASE prog_web DEFAULT CHARSET utf8;
 
+USE prog_web;
+
 CREATE TABLE pessoas (
   id int PRIMARY KEY,
   nome varchar(50),
   fone varchar(10),
-  email varchar(100),
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  email varchar(100)
+) ENGINE=InnoDB;
+
+INSERT INTO pessoas (id, nome, fone, email) VALUES
+(1, 'João', '8832123456', 'joao@gmail.com'),
+(2, 'Maria', '8845321234', 'maria@gmail.com'),
+(3, 'José', '8812345678', 'jose@gmail.com');
 ```
 
 soma
