@@ -12,16 +12,16 @@ CREATE DATABASE prog_web DEFAULT CHARSET utf8;
 USE prog_web;
 
 CREATE TABLE pessoas (
-  id int PRIMARY KEY,
+  id int PRIMARY KEY AUTO_INCREMENT,
   nome varchar(50),
   fone varchar(10),
   email varchar(100)
 ) ENGINE=InnoDB;
 
-INSERT INTO pessoas (id, nome, fone, email) VALUES
-(1, 'João', '8832123456', 'joao@gmail.com'),
-(2, 'Maria', '8845321234', 'maria@gmail.com'),
-(3, 'José', '8812345678', 'jose@gmail.com');
+INSERT INTO pessoas (nome, fone, email) VALUES
+('João', '8832123456', 'joao@gmail.com'),
+('Maria', '8845321234', 'maria@gmail.com'),
+('José', '8812345678', 'jose@gmail.com');
 ```
 
 soma
