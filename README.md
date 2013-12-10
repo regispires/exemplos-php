@@ -51,3 +51,7 @@ Hello World com CodeIgniter.
 hello2-ci
 -----
 Evolução do hello-ci.
+
+mvc-ci
+-----
+Aplicação CRUD MVC usando o CodeIgniter.
