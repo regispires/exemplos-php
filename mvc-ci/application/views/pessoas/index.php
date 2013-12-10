@@ -1,4 +1,5 @@
-<h1>Listagem de Pessoas</h1>
+<h2>Listagem de Pessoas</h2>
+<img src="<?= site_url('/img/codeigniter.png')?>" />
 <table>
 	<tr>
 	<th>Nome</th>

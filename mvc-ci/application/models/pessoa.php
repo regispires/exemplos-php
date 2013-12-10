@@ -23,7 +23,8 @@ class Pessoa extends CI_Model {
     }
 
     function busca_pessoa($id) {
-        return $this->db->get_where('pessoas', array('id' => $id))->row();
+        $this->db->where('id', $id);
+        return $this->db->get('pessoas')->row();
     }
 
 }
