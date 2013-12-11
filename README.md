@@ -54,11 +54,11 @@ Evolução do hello-ci.
 
 mvc-ci
 -----
-Aplicação CRUD MVC usando o CodeIgniter.
+Aplicação CRUD MVC usando o CodeIgniter. A reescrita de URL deve estar habilitada no Servidor Web.
 
 mvc-ci2
 -----
-Evolução de mvc-ci com cabeçalho, imagem e controller chamado 'bd' para executar Script de criação de tabela e povoamento do Banco de Dados.
+Evolução de mvc-ci com formulário de busca e controller chamado 'bd' para executar Script de criação de tabela e povoamento do Banco de Dados. Para usar o controller bd, acesse: http://localhost/mvc-ci2/bd/
 
 mvc-ci3
 -----
