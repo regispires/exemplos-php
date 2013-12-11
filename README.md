@@ -58,7 +58,7 @@ Aplicação CRUD MVC usando o CodeIgniter.
 
 mvc-ci2
 -----
-Evolução de mvc-ci com cabeçalho, imagem e controller para executar Script de criação de tabela e povoamento do Banco de Dados.
+Evolução de mvc-ci com cabeçalho, imagem e controller chamado 'bd' para executar Script de criação de tabela e povoamento do Banco de Dados.
 
 mvc-ci3
 -----
