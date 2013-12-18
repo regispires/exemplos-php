@@ -63,3 +63,8 @@ Evolução de mvc-ci com formulário de busca e controller chamado 'bd' para exe
 mvc-ci3
 -----
 Evolução de mvc-ci2 com paginação de pessoas.
+
+mvc-ci4
+-----
+Evolução de mvc-ci3 com exibição de mensagens (flashdate) e login simples sem uso do banco de dados.
+
