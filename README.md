@@ -67,4 +67,7 @@ Evolução de mvc-ci2 com paginação de pessoas.
 mvc-ci4
 -----
 Evolução de mvc-ci3 com exibição de mensagens (flashdate) e login simples sem uso do banco de dados.
+O controlador MY_Controller (application/core/MY_Controller.php) serve apenas para forçar a checagem de estar ou não logado. 
+Se o usuário não estiver logado, ele redireciona o usuário para o fazer o login.
+Os controladores que herdam de MY_Controller recebem automaticamente essa importante funcionalidade.
 
