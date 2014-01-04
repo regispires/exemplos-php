@@ -22,6 +22,19 @@ INSERT INTO pessoas (nome, fone, email) VALUES
 ('João', '8832123456', 'joao@gmail.com'),
 ('Maria', '8845321234', 'maria@gmail.com'),
 ('José', '8812345678', 'jose@gmail.com');
+
+CREATE TABLE usuarios (
+  id int PRIMARY KEY AUTO_INCREMENT,
+  nome varchar(50),
+  login varchar(40),
+  senha varchar(40),
+  perfil varchar(20),
+  UNIQUE KEY (login)
+) ENGINE=InnoDB;
+
+INSERT INTO usuarios (id, nome, login, senha, perfil) VALUES
+(1, 'Regis Pires Magalhães', 'regis', '8cb2237d0679ca88db6464eac60da96345513964', 'admin'),
+(2, 'João Lopes Soares', 'joaolopes', '8cb2237d0679ca88db6464eac60da96345513964', 'user');
 ```
 
 soma
