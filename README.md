@@ -24,12 +24,11 @@ INSERT INTO pessoas (nome, fone, email) VALUES
 ('José', '8812345678', 'jose@gmail.com');
 
 CREATE TABLE usuarios (
-  id int PRIMARY KEY AUTO_INCREMENT,
-  nome varchar(50),
-  login varchar(40),
-  senha varchar(40),
-  perfil varchar(20),
-  UNIQUE KEY (login)
+    id int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(50),
+    login varchar(40) UNIQUE,
+    senha varchar(40),
+    perfil varchar(20)
 ) ENGINE=InnoDB;
 
 INSERT INTO usuarios (id, nome, login, senha, perfil) VALUES
