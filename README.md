@@ -22,6 +22,18 @@ INSERT INTO pessoas (nome, fone, email) VALUES
 ('João', '8832123456', 'joao@gmail.com'),
 ('Maria', '8845321234', 'maria@gmail.com'),
 ('José', '8812345678', 'jose@gmail.com');
+
+CREATE TABLE usuarios (
+    id int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(50),
+    login varchar(40) UNIQUE,
+    senha varchar(40),
+    perfil varchar(20)
+) ENGINE=InnoDB;
+
+INSERT INTO usuarios (id, nome, login, senha, perfil) VALUES
+(1, 'Regis Pires Magalhães', 'regis', '8cb2237d0679ca88db6464eac60da96345513964', 'admin'),
+(2, 'João Lopes Soares', 'joaolopes', '8cb2237d0679ca88db6464eac60da96345513964', 'user');
 ```
 
 soma
@@ -67,4 +79,7 @@ Evolução de mvc-ci2 com paginação de pessoas.
 mvc-ci4
 -----
 Evolução de mvc-ci3 com exibição de mensagens (flashdate) e login simples sem uso do banco de dados.
+O controlador MY_Controller (application/core/MY_Controller.php) serve apenas para forçar a checagem de estar ou não logado. 
+Se o usuário não estiver logado, ele redireciona o usuário para o fazer o login.
+Os controladores que herdam de MY_Controller recebem automaticamente essa importante funcionalidade.
 
