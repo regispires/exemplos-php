@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>jquery load</title>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+        $("#form1").submit(function(e){
+        	e.preventDefault();
+            $.ajax({
+	            url: "ajax-test.php",
+	            type: "POST",
+	            dataType: "JSON",
+	            success: function (data) {
+	                $("#nome").text(data.nome);
+	                $("#fone").text(data.fone);
+	                $("#email").text(data.email);
+            	}
+	        });
+	    }); 
+        $("#form2").submit(function(e){
+        	e.preventDefault();
+            $("#nome").text("");
+            $("#fone").text("");
+            $("#email").text("");
+	    }); 
+    });
+    </script>
+</head>
+<body>
+<form id="form1" action="jquery-load.html">
+	<input id="submit" type="submit" value="Obter dados do servidor via AJAX" />
+</form>
+<form id="form2" action="jquery-load.html">
+	<input id="submit" type="submit" value="Limpar dados" />
+</form>
+<p>Nome: <span id="nome"></span></p>
+<p>Telefone: <span id="fone"></span></p>
+<p>E-Mail: <span id="email"></span></p>
+</body>
+</html>

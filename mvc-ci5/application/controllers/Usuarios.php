@@ -38,20 +38,20 @@ class Usuarios extends MY_Controller {
 
   function insere_processa() {
     $dados = $this->input->post();
-    if ($dados['senha'] && $dados['senha'] == $dados['confirma_senha']) {
-      unset($dados['confirma_senha']);
-      if (strlen($dados['senha']) > 0) {
+    if ($dados['senha']) {
+      if ($dados['senha'] == $dados['confirma_senha']) {
+        unset($dados['confirma_senha']);
         $dados['senha'] = sha1($dados['senha']);
         $dados['senha'] = sha1($dados['senha']);
         $this->load->model('Usuario');
         $this->Usuario->insere($dados);
         $this->session->set_flashdata('msg','Usuário inserido com sucesso.');
-      } else {
+      } else { 
+        $this->session->set_flashdata('msg','Problema ao inserir: senha diferente de sua confirmação.');
+      }
+    } else {
         $this->session->set_flashdata('msg','Problema ao inserir: senha vazia.');
       }
-    } else { 
-      $this->session->set_flashdata('msg','Problema ao inserir: senha diferente de sua confirmação.');
-    }
     redirect('usuarios');
   }
 
