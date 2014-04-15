@@ -83,3 +83,7 @@ O controlador MY_Controller (application/core/MY_Controller.php) serve apenas pa
 Se o usuário não estiver logado, ele redireciona o usuário para o fazer o login.
 Os controladores que herdam de MY_Controller recebem automaticamente essa importante funcionalidade.
 
+mvc-ci5
+-----
+Evolução de mvc-ci4 com uso do Bootstrap e login acessando o banco de dados para obter dados de usuários. CRUD de usuários também foi acrescentado à aplicação.
+
