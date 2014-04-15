@@ -87,3 +87,9 @@ mvc-ci5
 -----
 Evolução de mvc-ci4 com uso do Bootstrap e login acessando o banco de dados para obter dados de usuários. CRUD de usuários também foi acrescentado à aplicação.
 
+jquery-ajax
+-----
+Exemplo simples de uso do jQuery para obtenção de dados JSON do servidor e exibição dos dados obtidos na janela do navegador.
+
+
+
